@@ -2,7 +2,7 @@
 import React from "react";
 
 // product
-const Product = () => {
+const Product = (props) => {
     return (
         // section product
         <section id="product">
@@ -13,13 +13,13 @@ const Product = () => {
                         {/* product card */}
                         <div className="card shadow">
                             <figure className="figure shadow">
-                                <img src="https://it.crucial.com/content/dam/crucial/articles/for-pc-builders/new025-how-to-upgrade-your-pc/modern-gaming-pc.jpg.transform/medium-jpg/img.jpg" className="figure-img img-fluid rounded" alt="..."/>
+                                <img src={props.products[0].image} className="figure-img img-fluid rounded" alt="..."/>
                             </figure>
 
                             {/* card body */}
                             <div className="card-body">
-                                <h5>Pc Dell OptiPlex 3000 8GB DDR4-SDRAM 512GB SSD Nero</h5>
-                                <p>799.99 &euro;</p>
+                                <h5>{props.products[0].name}</h5>
+                                <p>{props.products[0].price} &euro;</p>
                             </div>
 
                             {/* card btn */}
