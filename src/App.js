@@ -1,8 +1,11 @@
+// import app css
+import './App.css';
+
 // import component 1
 import MyHeader from './components/MyHeader';
 
-// import app css
-import './App.css';
+// import product component
+import Product from './components/Product';
 
 function App() {
   return (
@@ -10,6 +13,12 @@ function App() {
     <div className="App">
       {/* my header */}
       <MyHeader/>
+
+      {/* main */}
+      <main>
+        {/* product */}
+        <Product/>
+      </main>
     </div>
   );
 }
