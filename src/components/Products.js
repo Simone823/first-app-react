@@ -3,6 +3,11 @@ import React from "react";
 
 // products
 const Products = (props) => {
+    // function add to cart; (passando il parametro (e) la funzione non parte al render di react)
+    const addToCart = (product) => (e) => {
+        alert(`(${product.name}) Aggiunto al carrello`);
+    }
+
     return (
         // section product
         <section id="products">
@@ -27,7 +32,7 @@ const Products = (props) => {
 
                                     {/* card btn */}
                                     <div className="card-btn px-3 pb-3">
-                                        <button className="btn btn-primary w-100">Aggiungi al carrello</button>
+                                        <button onClick={addToCart(product)} className="btn btn-primary w-100">Aggiungi al carrello</button>
                                     </div>
                                 </div>
                             </div>
