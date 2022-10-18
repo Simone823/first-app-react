@@ -8,7 +8,7 @@ const MyHeader = () => {
     <header>
       <nav className="navbar navbar-dark bg-dark">
         <div className="container-fluid">
-          <span className="navbar-brand mb-0 h1">First React Project</span>
+          <span className="navbar-brand mb-0 h1">First App React</span>
         </div>
       </nav>
     </header>
