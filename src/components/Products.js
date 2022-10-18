@@ -1,11 +1,11 @@
 // import react
 import React from "react";
 
-// product
+// products
 const Products = (props) => {
     return (
         // section product
-        <section id="product">
+        <section id="products">
             <div className="container">
                 <div className="row justify-content-center gy-4">
 
