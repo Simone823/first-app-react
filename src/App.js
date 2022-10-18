@@ -5,9 +5,12 @@ import './App.css';
 import MyHeader from './components/MyHeader';
 
 // import product component
-import Product from './components/Product';
+import Product from './components/Products';
 
 function App() {
+  // data products json
+  const data = require('./products.json');
+
   return (
     // app
     <div className="App">
@@ -17,50 +20,10 @@ function App() {
       {/* main */}
       <main>
         {/* product */}
-        <Product products={products}/>
+        <Product products={data.products}/>
       </main>
     </div>
   );
 }
-
-// products array
-const products = [
-  {
-    "id": 1,
-    "name": "Alghe wakame",
-    "price": "3",
-    "image": "https://delivebo.herokuapp.com/storage/uploads/alghe_wakame.png",
-  },
-  {
-    "id": 2,
-    "name": "Pizza 4 Formaggi",
-    "price": "6.5",
-    "image": "https://delivebo.herokuapp.com/storage/uploads/pizza_4_formaggi.png",
-  },
-  {
-    "id": 3,
-    "name": "Pizza ai Funghi",
-    "price": "6.5",
-    "image": "https://delivebo.herokuapp.com/storage/uploads/pizza_funghi.png",
-  },
-  {
-    "id": 4,
-    "name": "Pizza Bresaola e Grana",
-    "price": "8",
-    "image": "https://delivebo.herokuapp.com/storage/uploads/pizza_breasola_rucola_grana.png",
-  },
-  {
-    "id": 5,
-    "name": "Totopos",
-    "price": "6",
-    "image": "https://delivebo.herokuapp.com/storage/uploads/totopos.png",
-  },
-  {
-    "id": 6,
-    "name": "Yasai yaki meshi",
-    "price": "6",
-    "image": "https://delivebo.herokuapp.com/storage/uploads/yasai_yaki_meshi.png",
-  },
-];
 
 export default App;
