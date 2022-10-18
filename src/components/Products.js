@@ -16,7 +16,7 @@ const Products = (props) => {
                                 {/* product card */}
                                 <div className="card shadow">
                                     <figure className="figure shadow">
-                                        <img src={product.image} className="figure-img img-fluid rounded" alt="..."/>
+                                        <img src={product.image} className="figure-img img-fluid rounded" alt={product.name}/>
                                     </figure>
 
                                     {/* card body */}
