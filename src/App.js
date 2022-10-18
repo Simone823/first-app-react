@@ -26,15 +26,40 @@ function App() {
 // products array
 const products = [
   {
-    name: 'Pc Dell OptiPlex 3000 8GB DDR4-SDRAM 512GB SSD Nero',
-    price: '799.99',
-    image: 'https://it.crucial.com/content/dam/crucial/articles/for-pc-builders/new025-how-to-upgrade-your-pc/modern-gaming-pc.jpg.transform/medium-jpg/img.jpg'
+    "id": 1,
+    "name": "Alghe wakame",
+    "price": "3",
+    "image": "https://delivebo.herokuapp.com/storage/uploads/alghe_wakame.png",
   },
-
   {
-    name: 'Pc Dell OptiPlex 8000 32GB DDR4-SDRAM 512GB SSD Nero',
-    price: '950.99',
-    image: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/products/desktops-and-all-in-ones/optiplex/5400-aio/media-gallery/optiplex-5400aio-gallery-2.psd?fmt=pjpg&pscan=auto&scl=1&wid=2000&hei=2000&qlt=100,1&resMode=sharp2&size=2000,2000&chrss=full&imwidth=5000'
+    "id": 2,
+    "name": "Pizza 4 Formaggi",
+    "price": "6.5",
+    "image": "https://delivebo.herokuapp.com/storage/uploads/pizza_4_formaggi.png",
+  },
+  {
+    "id": 3,
+    "name": "Pizza ai Funghi",
+    "price": "6.5",
+    "image": "https://delivebo.herokuapp.com/storage/uploads/pizza_funghi.png",
+  },
+  {
+    "id": 4,
+    "name": "Pizza Bresaola e Grana",
+    "price": "8",
+    "image": "https://delivebo.herokuapp.com/storage/uploads/pizza_breasola_rucola_grana.png",
+  },
+  {
+    "id": 5,
+    "name": "Totopos",
+    "price": "6",
+    "image": "https://delivebo.herokuapp.com/storage/uploads/totopos.png",
+  },
+  {
+    "id": 6,
+    "name": "Yasai yaki meshi",
+    "price": "6",
+    "image": "https://delivebo.herokuapp.com/storage/uploads/yasai_yaki_meshi.png",
   },
 ];
 

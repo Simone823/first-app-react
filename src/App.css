@@ -22,3 +22,15 @@ img {
 main {
     padding: 20px 0;
 }
+
+/* product */
+#product .card figure {
+    height: 200px;
+}
+
+#product .card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

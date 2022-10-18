@@ -7,27 +7,32 @@ const Product = (props) => {
         // section product
         <section id="product">
             <div className="container">
-                <div className="row justify-content-center">
+                <div className="row justify-content-center gy-4">
 
-                    <div className="col-12 col-md-6 col-lg-4">
-                        {/* product card */}
-                        <div className="card shadow">
-                            <figure className="figure shadow">
-                                <img src={props.products[0].image} className="figure-img img-fluid rounded" alt="..."/>
-                            </figure>
+                    {/* products map  */}
+                    {props.products.map( (product, index) => {
+                        return (
+                            <div className="col-12 col-md-6 col-lg-4" key={index}>
+                                {/* product card */}
+                                <div className="card shadow">
+                                    <figure className="figure shadow">
+                                        <img src={product.image} className="figure-img img-fluid rounded" alt="..."/>
+                                    </figure>
 
-                            {/* card body */}
-                            <div className="card-body">
-                                <h5>{props.products[0].name}</h5>
-                                <p>{props.products[0].price} &euro;</p>
+                                    {/* card body */}
+                                    <div className="card-body">
+                                        <h5>{product.name}</h5>
+                                        <p>{product.price} &euro;</p>
+                                    </div>
+
+                                    {/* card btn */}
+                                    <div className="card-btn px-3 pb-3">
+                                        <button className="btn btn-primary w-100">Aggiungi al carrello</button>
+                                    </div>
+                                </div>
                             </div>
-
-                            {/* card btn */}
-                            <div className="card-btn px-3 pb-3">
-                                <button className="btn btn-primary w-100">Aggiungi al carrello</button>
-                            </div>
-                        </div>
-                    </div>
+                        )
+                    })}
 
                 </div>
             </div>
