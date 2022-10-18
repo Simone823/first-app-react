@@ -10,9 +10,9 @@ const Product = (props) => {
                 <div className="row justify-content-center gy-4">
 
                     {/* products map  */}
-                    {props.products.map( (product, index) => {
+                    {props.products.map( (product) => {
                         return (
-                            <div className="col-12 col-md-6 col-lg-4" key={index}>
+                            <div className="col-12 col-md-6 col-lg-4" key={product.id}>
                                 {/* product card */}
                                 <div className="card shadow">
                                     <figure className="figure shadow">
