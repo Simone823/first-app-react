@@ -6,7 +6,11 @@ const MyHeader = () => {
   return (
     // HEADER
     <header>
-      Component1
+      <nav className="navbar navbar-dark bg-dark">
+        <div className="container-fluid">
+          <span className="navbar-brand mb-0 h1">First React Project</span>
+        </div>
+      </nav>
     </header>
   )
 }

@@ -1,7 +1,7 @@
 // import app css
 import './App.css';
 
-// import component 1
+// import header
 import MyHeader from './components/MyHeader';
 
 // import product component
