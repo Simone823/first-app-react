@@ -2,7 +2,7 @@
 import React from "react";
 
 // product
-const Product = (props) => {
+const Products = (props) => {
     return (
         // section product
         <section id="product">
@@ -41,4 +41,4 @@ const Product = (props) => {
 }
 
 // export product
-export default Product;
+export default Products;

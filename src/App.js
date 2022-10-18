@@ -5,7 +5,7 @@ import './App.css';
 import MyHeader from './components/MyHeader';
 
 // import product component
-import Product from './components/Products';
+import Products from './components/Products';
 
 function App() {
   // data products json
@@ -20,7 +20,7 @@ function App() {
       {/* main */}
       <main>
         {/* product */}
-        <Product products={data.products}/>
+        <Products products={data.products}/>
       </main>
     </div>
   );
